@@ -358,6 +358,43 @@ sudo ninja -C build uninstall
 - I use my own PKGBUILDs for many MinGW libraries.
 - Visual Studio can't compile QMPlay2.
 
+##### windows操作系统下编译，参考文档
+ - https://github.com/zaps166/QMPlay2/wiki/Compilation-on-Windows-x86-64
+ 
+重点是这个
+Go to "Projects/Build" and append to "Initial CMake parameters":
+```
+-DCUSTOM_INCLUDE_DIR=K:\QMPlay2\QMPlay2-Win64-24.06.16-deps\include
+-DCUSTOM_LINK_DIR=K:\QMPlay2\QMPlay2-Win64-24.06.16-deps\lib
+-DUSE_AUDIOCD=ON
+-DUSE_CHIPTUNE_SID=ON
+-DUSE_RUBBERBAND=ON
+```
+ 
+##### windows操作系统下编译，一些依赖相关的文件
+ - https://github.com/zaps166/QMPlay2/releases/download/24.06.16/QMPlay2-Win64-24.06.16-deps.7z
+ 
+ 
+##### msys2安装相关依赖
+
+``` 
+pacman -S --needed base-devel mingw-w64-x86_64-toolchain
+
+pacman -S mingw-w64-x86_64-qt5-static
+
+pacman -S mingw-w64-x86_64-qt6-static
+
+pacman -S git mingw-w64-x86_64-gcc mingw-w64-x86_64-binutils mingw-w64-x86_64-make base-devel mingw-w64-x86_64-qt5 mingw-w64-x86_64-pkg-config mingw-w64-x86_64-mpv mingw-w64-x86_64-portaudio mingw-w64-x86_64-libzip mingw-w64-x86_64-jbigkit mingw-w64-x86_64-mpg123
+```
+
+##### 动态编译的软件，查询依赖的dll方式
+
+- 可以用Process Explore来获取所依赖的dll文件
+- 下载：http://technet.microsoft.com/en-us/sysinternals/bb896653.aspx
+- 打开procexp64.exe，通过菜单View -> Lower Pane View -> DLLs勾选，显示dll窗口
+- 在Qt Creator编辑器下，将exe运行起来，在Process Explor中，找到对应的exe进程选中，在下面就可以看到所有依赖的dll了
+- ctrl+s将所有dll信息保存起来，然后通过文本内容处理，得到所有依赖的mingw64 dll
+
 ## Building package RPM, DEB or any other
 
 You can look at [Arch Linux PKGBUILD](https://aur.archlinux.org/cgit/aur.git/tree/PKGBUILD?h=qmplay2).

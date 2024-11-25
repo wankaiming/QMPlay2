@@ -1,0 +1,27 @@
+代理软件开启局域共享使用
+
+然后设置代理
+export http_proxy=http://192.168.31.142:7890
+export https_proxy=http://192.168.31.142:7890
+
+unset http_proxy
+unset https_proxy
+
+安装yay
+git clone https://aur.archlinux.org/yay.git
+makepkg -si
+
+然后安装aur软件，会依次下载安装相关依赖
+yay -S xxx  
+
+
+
+编辑 /etc/pacman.d/mirrorlist，在文件的最顶端添加：
+
+Server = https://mirrors.tuna.tsinghua.edu.cn/archlinux/$repo/os/$arch
+更新软件包缓存：
+
+pacman -Syyu
+
+git clone https://aur.archlinux.org/qmplay2.git 
+makepkg -si 

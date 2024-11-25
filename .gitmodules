@@ -1,9 +1,0 @@
-[submodule "src/qmvk"]
-	path = src/qmvk
-	url = https://github.com/zaps166/QmVk.git
-[submodule "src/qmplay2/vulkan/headers"]
-	path = src/qmplay2/vulkan/headers
-	url = https://github.com/KhronosGroup/Vulkan-Headers.git
-[submodule "src/gui/Windows/qt/qtwinextras_submodule"]
-	path = src/gui/Windows/qt/qtwinextras_submodule
-	url = https://github.com/qt/qtwinextras.git

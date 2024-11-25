@@ -1,0 +1,14 @@
+-I/k/QMPlay2/src/qmplay2
+-I/k/QMPlay2/src/qmplay2
+-D__STDC_CONSTANT_MACROS
+-D__STDC_LIMIT_MACROS
+-DQT_USE_QSTRINGBUILDER
+-DQ_ENTER_EVENT=QEnterEvent
+-DUSE_OPENGL
+-DUSE_VULKAN
+-DUSE_YOUTUBEDL
+-DQMPLAY2SHAREDLIB_LIBRARY
+-DQMVK_LIBRARY
+-o
+/k/QMPlay2/src/qmplay2/moc_notifications_interface.cpp
+/k/QMPlay2/src/qmplay2/notifications_interface.h
