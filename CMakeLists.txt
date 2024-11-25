@@ -110,7 +110,7 @@ if(WIN32)
     add_feature_info(CMD USE_CMD "Show CMD when running QMPlay2")
 endif()
 
-option(USE_OPENGL "Build with OpenGL support" ON)
+option(USE_OPENGL "Build with OpenGL support" OFF)
 add_feature_info(OpenGL USE_OPENGL "Build with OpenGL support")
 if(USE_OPENGL)
     add_definitions(-DUSE_OPENGL)
