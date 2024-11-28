@@ -137,30 +137,30 @@ copy "D:\msys64\mingw64\share\qt6\plugins\imageformats\qwebp.dll" C:\Users\admin
 copy "D:\msys64\mingw64\share\qt6\plugins\platforms\qwindows.dll" C:\Users\admin\Desktop\QMPlay2\platforms
 copy "D:\msys64\mingw64\share\qt6\plugins\styles\qmodernwindowsstyle.dll" C:\Users\admin\Desktop\QMPlay2\styles
 
-copy "K:\QMPlay2\build\Qt_6_8_0_mingw64-Release\src\gui\QMPlay2.exe" C:\Users\admin\Desktop\QMPlay2
+copy "K:\QMPlay2\build\Qt_6_8_0_mingw64-MinSizeRel\src\gui\QMPlay2.exe" C:\Users\admin\Desktop\QMPlay2
 
-copy "K:\QMPlay2\build\Qt_6_8_0_mingw64-Release\src\qmplay2\libqmplay2.dll" C:\Users\admin\Desktop\QMPlay2
+copy "K:\QMPlay2\build\Qt_6_8_0_mingw64-MinSizeRel\src\qmplay2\libqmplay2.dll" C:\Users\admin\Desktop\QMPlay2
 
 mkdir C:\Users\admin\Desktop\QMPlay2\modules\
 
-copy "K:\QMPlay2\build\Qt_6_8_0_mingw64-Release\src\modules\AudioFilters\AudioFilters.dll" C:\Users\admin\Desktop\QMPlay2\modules\
-copy "K:\QMPlay2\build\Qt_6_8_0_mingw64-Release\src\modules\Chiptune\Chiptune.dll" C:\Users\admin\Desktop\QMPlay2\modules\
-copy "K:\QMPlay2\build\Qt_6_8_0_mingw64-Release\src\modules\CUVID\CUVID.dll" C:\Users\admin\Desktop\QMPlay2\modules\
-copy "K:\QMPlay2\build\Qt_6_8_0_mingw64-Release\src\modules\Extensions\Extensions.dll" C:\Users\admin\Desktop\QMPlay2\modules\
-copy "K:\QMPlay2\build\Qt_6_8_0_mingw64-Release\src\modules\FFmpeg\FFmpeg.dll" C:\Users\admin\Desktop\QMPlay2\modules\
-copy "K:\QMPlay2\build\Qt_6_8_0_mingw64-Release\src\modules\FileAssociation\FileAssociation.dll" C:\Users\admin\Desktop\QMPlay2\modules\
-copy "K:\QMPlay2\build\Qt_6_8_0_mingw64-Release\src\modules\Inputs\Inputs.dll" C:\Users\admin\Desktop\QMPlay2\modules\
-copy "K:\QMPlay2\build\Qt_6_8_0_mingw64-Release\src\modules\Modplug\Modplug.dll" C:\Users\admin\Desktop\QMPlay2\modules\
-copy "K:\QMPlay2\build\Qt_6_8_0_mingw64-Release\src\modules\Notify\Notify.dll" C:\Users\admin\Desktop\QMPlay2\modules\
-copy "K:\QMPlay2\build\Qt_6_8_0_mingw64-Release\src\modules\Playlists\Playlists.dll" C:\Users\admin\Desktop\QMPlay2\modules\
-copy "K:\QMPlay2\build\Qt_6_8_0_mingw64-Release\src\modules\PortAudio\PortAudio.dll" C:\Users\admin\Desktop\QMPlay2\modules\
-copy "K:\QMPlay2\build\Qt_6_8_0_mingw64-Release\src\modules\QPainter\QPainter.dll" C:\Users\admin\Desktop\QMPlay2\modules\
-copy "K:\QMPlay2\build\Qt_6_8_0_mingw64-Release\src\modules\Subtitles\Subtitles.dll" C:\Users\admin\Desktop\QMPlay2\modules\
-copy "K:\QMPlay2\build\Qt_6_8_0_mingw64-Release\src\modules\VideoFilters\VideoFilters.dll" C:\Users\admin\Desktop\QMPlay2\modules\
-copy "K:\QMPlay2\build\Qt_6_8_0_mingw64-Release\src\modules\Visualizations\Visualizations.dll" C:\Users\admin\Desktop\QMPlay2\modules\
+copy "K:\QMPlay2\build\Qt_6_8_0_mingw64-MinSizeRel\src\modules\AudioFilters\AudioFilters.dll" C:\Users\admin\Desktop\QMPlay2\modules
+copy "K:\QMPlay2\build\Qt_6_8_0_mingw64-MinSizeRel\src\modules\Chiptune\Chiptune.dll" C:\Users\admin\Desktop\QMPlay2\modules
+copy "K:\QMPlay2\build\Qt_6_8_0_mingw64-MinSizeRel\src\modules\CUVID\CUVID.dll" C:\Users\admin\Desktop\QMPlay2\modules
+copy "K:\QMPlay2\build\Qt_6_8_0_mingw64-MinSizeRel\src\modules\Extensions\Extensions.dll" C:\Users\admin\Desktop\QMPlay2\modules
+copy "K:\QMPlay2\build\Qt_6_8_0_mingw64-MinSizeRel\src\modules\FFmpeg\FFmpeg.dll" C:\Users\admin\Desktop\QMPlay2\modules
+copy "K:\QMPlay2\build\Qt_6_8_0_mingw64-MinSizeRel\src\modules\FileAssociation\FileAssociation.dll" C:\Users\admin\Desktop\QMPlay2\modules
+copy "K:\QMPlay2\build\Qt_6_8_0_mingw64-MinSizeRel\src\modules\Inputs\Inputs.dll" C:\Users\admin\Desktop\QMPlay2\modules
+copy "K:\QMPlay2\build\Qt_6_8_0_mingw64-MinSizeRel\src\modules\Modplug\Modplug.dll" C:\Users\admin\Desktop\QMPlay2\modules
+copy "K:\QMPlay2\build\Qt_6_8_0_mingw64-MinSizeRel\src\modules\Notify\Notify.dll" C:\Users\admin\Desktop\QMPlay2\modules
+copy "K:\QMPlay2\build\Qt_6_8_0_mingw64-MinSizeRel\src\modules\Playlists\Playlists.dll" C:\Users\admin\Desktop\QMPlay2\modules
+copy "K:\QMPlay2\build\Qt_6_8_0_mingw64-MinSizeRel\src\modules\PortAudio\PortAudio.dll" C:\Users\admin\Desktop\QMPlay2\modules
+copy "K:\QMPlay2\build\Qt_6_8_0_mingw64-MinSizeRel\src\modules\QPainter\QPainter.dll" C:\Users\admin\Desktop\QMPlay2\modules
+copy "K:\QMPlay2\build\Qt_6_8_0_mingw64-MinSizeRel\src\modules\Subtitles\Subtitles.dll" C:\Users\admin\Desktop\QMPlay2\modules
+copy "K:\QMPlay2\build\Qt_6_8_0_mingw64-MinSizeRel\src\modules\VideoFilters\VideoFilters.dll" C:\Users\admin\Desktop\QMPlay2\modules
+copy "K:\QMPlay2\build\Qt_6_8_0_mingw64-MinSizeRel\src\modules\Visualizations\Visualizations.dll" C:\Users\admin\Desktop\QMPlay2\modules
 
 mkdir C:\Users\admin\Desktop\QMPlay2\lang\
 
-for /r K:\QMPlay2\build\Qt_6_8_0_mingw64-Release\lang %%i in (*.qm) do copy "%%i" C:\Users\admin\Desktop\QMPlay2\lang\
+for /r K:\QMPlay2\build\Qt_6_8_0_mingw64-MinSizeRel\lang %%i in (*.qm) do copy "%%i" C:\Users\admin\Desktop\QMPlay2\lang\
 
 pause
