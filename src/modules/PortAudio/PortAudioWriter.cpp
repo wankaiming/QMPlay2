@@ -111,7 +111,8 @@ PortAudioWriter::PortAudioWriter(Module &module)
     m_wasapiStreamInfo.version = 1;
     m_wasapiStreamInfo.streamCategory = eAudioCategoryMedia;
 
-    m_outputParameters.hostApiSpecificStreamInfo = &m_wasapiStreamInfo;
+    //m_outputParameters.hostApiSpecificStreamInfo = &m_wasapiStreamInfo;
+    m_outputParameters.hostApiSpecificStreamInfo = NULL; // 设置为 NULL
 
     m_wasapiNotifications = new WASAPINotifications(this);
 #endif
