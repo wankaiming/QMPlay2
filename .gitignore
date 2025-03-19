@@ -6,14 +6,12 @@
 
 # Compiled Dynamic libraries
 *.dylib
-*.dll
 *.so
 
 # Compiled Static libraries
 *.lai
 *.lib
 *.la
-*.a
 
 # Executables
 *.exe
@@ -39,4 +37,7 @@ uic_wrapper.sh
 .qmake.stash
 .DS_Store
 Makefile
-*~
+CMakeFiles/
+CMakeCache.txt
+*.tmp
+*.cpp_parameters

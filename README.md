@@ -358,6 +358,33 @@ sudo ninja -C build uninstall
 - I use my own PKGBUILDs for many MinGW libraries.
 - Visual Studio can't compile QMPlay2.
 
+
+##### msys2安装相关依赖
+
+``` 
+pacman -S --needed base-devel mingw-w64-x86_64-toolchain
+
+pacman -S mingw-w64-x86_64-qt5-static
+
+pacman -S mingw-w64-x86_64-qt6-static
+
+pacman -S git mingw-w64-x86_64-gcc mingw-w64-x86_64-binutils mingw-w64-x86_64-make base-devel mingw-w64-x86_64-qt5 mingw-w64-x86_64-pkg-config mingw-w64-x86_64-mpv mingw-w64-x86_64-portaudio mingw-w64-x86_64-libzip mingw-w64-x86_64-jbigkit mingw-w64-x86_64-mpg123
+```
+
+##### 动态编译，自行摸索的步骤
+- 1.安装msys2 
+- 2.安装Qt Creator
+- 3.直接下载相关代码，然后导入Qt Creator，在构建套件设置好kit、qt版本、编译器、cmake 
+- 4.然后执行cmake，然后构建即可
+
+##### 动态编译，查询依赖的dll方式
+
+- 可以用Process Explorer来获取所依赖的dll文件
+- 下载：https://learn.microsoft.com/zh-cn/sysinternals/downloads/process-explorer
+- 打开procexp64.exe，通过菜单View -> Lower Pane View -> DLLs勾选，显示dll窗口
+- 在Qt Creator编辑器下，将exe运行起来，在Process Explorer中，找到对应的exe进程选中，在下面就可以看到所有依赖的dll
+- 将dll列点击下排序，然后ctrl+s将所有dll信息保存起来，然后通过文本内容处理，得到所有依赖的dll
+
 ## Building package RPM, DEB or any other
 
 You can look at [Arch Linux PKGBUILD](https://aur.archlinux.org/cgit/aur.git/tree/PKGBUILD?h=qmplay2).
