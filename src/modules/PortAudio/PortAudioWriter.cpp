@@ -111,7 +111,8 @@ PortAudioWriter::PortAudioWriter(Module &module)
     m_wasapiStreamInfo.version = 1;
     m_wasapiStreamInfo.streamCategory = eAudioCategoryMedia;
 
-    m_outputParameters.hostApiSpecificStreamInfo = &m_wasapiStreamInfo;
+    //m_outputParameters.hostApiSpecificStreamInfo = &m_wasapiStreamInfo;
+    m_outputParameters.hostApiSpecificStreamInfo = NULL; // 设置为 NULL
 
     m_wasapiNotifications = new WASAPINotifications(this);
 #endif
@@ -368,7 +369,8 @@ bool PortAudioWriter::deviceNeedsChangeParams(int *newChn, int *newRate)
 bool PortAudioWriter::openStream()
 {
     PaStream *newStream = nullptr;
-    if (Pa_OpenStream(&newStream, nullptr, &m_outputParameters, m_sampleRate, 0, paDitherOff, nullptr, nullptr) == paNoError)
+    PaError err = Pa_OpenStream(&newStream, nullptr, &m_outputParameters, m_sampleRate, 0, paDitherOff, nullptr, nullptr);
+    if (err == paNoError)
     {
         m_streamOpen = true;
         m_stream = newStream;
@@ -414,6 +416,8 @@ bool PortAudioWriter::openStream()
 #endif
         return true;
     }
+    
+    QMPlay2Core.logError("PortAudio :: " + tr("PortAudio stream open failed") + ":" + Pa_GetErrorText(err));
     return false;
 }
 bool PortAudioWriter::startStream()
